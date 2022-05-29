@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "csv"
+
+CSV.foreach('db/seeds/csv/SortInfo.csv', headers: true) do |row|
+  SortInfo.create(
+    name: row['品目名'],
+    kana: row['読み'],
+    sort: row['出し方（一覧）']
+  )
+end
