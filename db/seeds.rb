@@ -11,6 +11,10 @@ CSV.foreach('db/seeds/csv/SortInfo.csv', headers: true) do |row|
   SortInfo.create(
     name: row['品目名'],
     kana: row['読み'],
-    sort: row['出し方（一覧）']
+    sort: row['出し方（一覧）'],
+    syno: row['類似語'],
+    sort2: row['出し方（詳細）'],
+    detail: row['出し方のポイント'],
+    url: row['URL1']    
   )
 end
