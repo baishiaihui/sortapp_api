@@ -1,5 +1,4 @@
 class Api::V1::SortInfosController < ApplicationController
-
   #全件取得
   # def index
   #   sortinfos = SortInfo.all
@@ -22,4 +21,5 @@ class Api::V1::SortInfosController < ApplicationController
       render json:{ message: '検索キーワードがありません'}
     end
   end  
+
 end

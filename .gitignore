@@ -26,9 +26,8 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-/.ash_history
-/.irb_history
+# github
+/.github
 
-/.github/
-
-/db/seeds/
+# data
+/db/seeds
