@@ -1,4 +1,5 @@
 class SortInfo < ApplicationRecord
+
     # キーワード検索
     def self.search(keyword,syno_chk)
         if syno_chk == "true"

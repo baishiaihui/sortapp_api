@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
         # 詳細表示用アクション
-        resources :sort_infos, only: [:show]
+        resources :sort_infos, only: [:show, :create, :update, :destroy]
       
         # 検索実行用アクション 
         get 'search', to: "sort_infos#search"
